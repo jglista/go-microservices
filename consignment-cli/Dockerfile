@@ -6,7 +6,7 @@
 FROM golang:1.11.1 as builder
 
 # Set our workdir to our current service in the gopath
-WORKDIR /go/src/github.com/jglista/consignment-cli
+WORKDIR /go/src/github.com/jglista/go-microservices/consignment-cli
 
 # Copy the current code into our workdir
 COPY . .
@@ -41,7 +41,7 @@ WORKDIR /app
 # this build context. This reaches into our previous image, finds
 # the binary we built, and pulls it into this container. Amazing!
 COPY consignment.json /app/consignment.json
-COPY --from=builder /go/src/github.com/jglista/consignment-cli/consignment-cli .
+COPY --from=builder /go/src/github.com/jglista/go-microservices/consignment-cli/consignment-cli .
 
 # Run the binary as per usual! This time with a binary build in a
 # separate container, with all of the correct dependencies and

@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	pb "github.com/jglista/consignment-service/proto/consignment"
+	pb "github.com/jglista/go-microservices/consignment-service/proto/consignment"
 	microclient "github.com/micro/go-micro/client"
 	"github.com/micro/go-micro/cmd"
 	"golang.org/x/net/context"

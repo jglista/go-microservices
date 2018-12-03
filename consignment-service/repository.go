@@ -2,7 +2,7 @@
 package main
 
 import (
-	pb "github.com/jglista/consignment-service/proto/consignment"
+	pb "github.com/jglista/go-microservices/consignment-service/proto/consignment"
 	"gopkg.in/mgo.v2"
 )
 

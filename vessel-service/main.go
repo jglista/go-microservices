@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	pb "github.com/jglista/vessel-service/proto/vessel"
+	pb "github.com/jglista/go-microservices/vessel-service/proto/vessel"
 	"github.com/micro/go-micro"
 )
 

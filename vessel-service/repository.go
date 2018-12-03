@@ -1,7 +1,7 @@
 package main
 
 import (
-	pb "github.com/jglista/vessel-service/proto/vessel"
+	pb "github.com/jglista/go-microservices/vessel-service/proto/vessel"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
