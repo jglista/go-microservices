@@ -31,7 +31,7 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/jglista/consignment-service"
+  name = "github.com/jglista/go-microservices"
 
 [[constraint]]
   name = "github.com/micro/go-micro"
@@ -44,10 +44,6 @@
 [prune]
   go-tests = true
   unused-packages = true
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/jglista/vessel-service"
 
 [[constraint]]
   branch = "v2"

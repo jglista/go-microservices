@@ -65,19 +65,14 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:d1701d7d19fb7e4b99994877aeb894c788489e3cce75a501e5a07b1f5d8b5c62"
-  name = "github.com/jglista/consignment-service"
-  packages = ["proto/consignment"]
+  digest = "1:f49bdc4ce0c768f1b0aef074bcc3924cbc100be31fd057f7952bacd156d7fe1b"
+  name = "github.com/jglista/go-microservices"
+  packages = [
+    "consignment-service/proto/consignment",
+    "vessel-service/proto/vessel",
+  ]
   pruneopts = "UT"
-  revision = "bf531b80caec48a998216c975cdec7f325632696"
-
-[[projects]]
-  branch = "master"
-  digest = "1:a8d49c1d55df728458aeb16999514e25a4a72485d3be4244eefb16365b77b2c6"
-  name = "github.com/jglista/vessel-service"
-  packages = ["proto/vessel"]
-  pruneopts = "UT"
-  revision = "935073696fba7ff3d2fae803886e9f1820517967"
+  revision = "99426407479d4cd8fe0280e0fdd4e91caba51ec0"
 
 [[projects]]
   branch = "master"
@@ -256,8 +251,8 @@
   analyzer-version = 1
   input-imports = [
     "github.com/golang/protobuf/proto",
-    "github.com/jglista/consignment-service/proto/consignment",
-    "github.com/jglista/vessel-service/proto/vessel",
+    "github.com/jglista/go-microservices/consignment-service/proto/consignment",
+    "github.com/jglista/go-microservices/vessel-service/proto/vessel",
     "github.com/micro/go-micro",
     "github.com/micro/go-micro/client",
     "github.com/micro/go-micro/server",

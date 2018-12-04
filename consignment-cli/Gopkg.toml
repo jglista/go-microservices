@@ -27,7 +27,7 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/jglista/go-microservices/consignment-service"
+  name = "github.com/jglista/go-microservices"
 
 [[constraint]]
   name = "github.com/micro/go-micro"

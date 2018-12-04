@@ -65,11 +65,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:d1701d7d19fb7e4b99994877aeb894c788489e3cce75a501e5a07b1f5d8b5c62"
-  name = "github.com/jglista/consignment-service"
-  packages = ["proto/consignment"]
+  digest = "1:3b5e0d8ff8ba277918423eaba80c95d807a679ef6daa28395eca2ea3604910c2"
+  name = "github.com/jglista/go-microservices"
+  packages = ["consignment-service/proto/consignment"]
   pruneopts = "UT"
-  revision = "13d56597954a6964b0f52a44db4858688fa36324"
+  revision = "99426407479d4cd8fe0280e0fdd4e91caba51ec0"
 
 [[projects]]
   branch = "master"
@@ -232,7 +232,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/jglista/consignment-service/proto/consignment",
+    "github.com/jglista/go-microservices/consignment-service/proto/consignment",
     "github.com/micro/go-micro/client",
     "github.com/micro/go-micro/cmd",
     "golang.org/x/net/context",
