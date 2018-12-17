@@ -18,11 +18,11 @@ RUN go get -u github.com/golang/dep/cmd/dep
 
 # Create a dep project, and run `ensure`, which will pull in all
 # of the dependencies within this directory.
-RUN dep init && dep ensure
+RUN dep init && dep ensure -v
 
 # Build the binary, with a few flags which will allow
 # us to run this binary in Alpine.
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o consignment-cli .
 
 # Here we're using a second FROM statement, which is strange,
 # but this tells Docker to start a new build process with this
