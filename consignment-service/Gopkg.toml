@@ -26,8 +26,8 @@
 
 
 [[constraint]]
-  branch = "master"
   name = "github.com/golang/protobuf"
+  version = "1.2.0"
 
 [[constraint]]
   branch = "master"
@@ -35,7 +35,7 @@
 
 [[constraint]]
   name = "github.com/micro/go-micro"
-  version = "0.15.0"
+  version = "0.17.0"
 
 [[constraint]]
   branch = "master"
