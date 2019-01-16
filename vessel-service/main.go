@@ -24,7 +24,6 @@ func createDummyData(repo Repository) {
 }
 
 func main() {
-
 	host := os.Getenv("DB_HOST")
 
 	if host == "" {
