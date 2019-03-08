@@ -34,8 +34,8 @@
   name = "github.com/jglista/go-microservices"
 
 [[constraint]]
+  branch = "master"
   name = "github.com/micro/go-micro"
-  version = "0.17.0"
 
 [[constraint]]
   branch = "master"
