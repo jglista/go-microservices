@@ -137,11 +137,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:b85d99488f9adaa592a0b50fe817f9fb8af1517158b614a8b0f7c7e1e8c1ae03"
+  digest = "1:29510a285f98ef966ccff703bb72d740926990ca367a8060e920c635bcaab11f"
   name = "github.com/jglista/go-microservices"
   packages = ["vessel-service/proto/vessel"]
   pruneopts = "UT"
-  revision = "6e2a4649e0fe019ece828cb2c4fc3de03d6f33be"
+  revision = "14c1747512ab21198a1c40e55f0251a967502ab6"
 
 [[projects]]
   digest = "1:6491a68a381ec652fad0b1ed9664870b21763058270be238fc9dd0875e21c095"
@@ -365,6 +365,8 @@
     "github.com/golang/protobuf/proto",
     "github.com/jglista/go-microservices/vessel-service/proto/vessel",
     "github.com/micro/go-micro",
+    "github.com/micro/go-micro/client",
+    "github.com/micro/go-micro/server",
     "golang.org/x/net/context",
     "gopkg.in/mgo.v2",
     "gopkg.in/mgo.v2/bson",
