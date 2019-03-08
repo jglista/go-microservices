@@ -137,14 +137,14 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:47eab4cf4b34e61956ebfcb3fcc90a26ec267788dcebbd2fb522381e16d397b2"
+  digest = "1:e06e68f9126e22ca0e36f6a0cd94adaf5a87b63c0432aa61b2f3c016701380b7"
   name = "github.com/jglista/go-microservices"
   packages = [
     "consignment-service/proto/consignment",
     "vessel-service/proto/vessel",
   ]
   pruneopts = "UT"
-  revision = "14c1747512ab21198a1c40e55f0251a967502ab6"
+  revision = "9e39ec7cb152cc1dce55502c7168ae73ef3584bc"
 
 [[projects]]
   digest = "1:6491a68a381ec652fad0b1ed9664870b21763058270be238fc9dd0875e21c095"
@@ -369,6 +369,8 @@
     "github.com/jglista/go-microservices/consignment-service/proto/consignment",
     "github.com/jglista/go-microservices/vessel-service/proto/vessel",
     "github.com/micro/go-micro",
+    "github.com/micro/go-micro/client",
+    "github.com/micro/go-micro/server",
     "golang.org/x/net/context",
     "gopkg.in/mgo.v2",
   ]

@@ -15,8 +15,8 @@ import (
 // in the generated code itself for the exact method signatures etc
 // to give you a better idea.
 type service struct {
-	session      *mgo.Session
-	vesselClient vesselProto.VesselServiceClient
+	session       *mgo.Session
+	VesselService vesselProto.VesselService
 }
 
 func (s *service) GetRepo() Repository {
@@ -31,7 +31,7 @@ func (s *service) CreateConsignment(ctx context.Context, req *pb.Consignment, re
 
 	// Here we call a client instance of our vessel service with our consignment weight,
 	// and the amount of containers as the capacity value
-	vesselResponse, err := s.vesselClient.FindAvailable(context.Background(), &vesselProto.Specification{
+	vesselResponse, err := s.VesselService.FindAvailable(context.Background(), &vesselProto.Specification{
 		MaxWeight: req.Weight,
 		Capacity:  int32(len(req.Containers)),
 	})
