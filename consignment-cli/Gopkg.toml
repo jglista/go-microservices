@@ -29,16 +29,12 @@
   name = "github.com/jglista/go-microservices"
 
 [[constraint]]
+  branch = "master"
   name = "github.com/micro/go-micro"
-  version = "0.15.0"
 
 [[constraint]]
   branch = "master"
   name = "golang.org/x/net"
-
-[[override]]
-  branch = "master"
-  name = "github.com/golang/protobuf"
 
 [prune]
   go-tests = true
