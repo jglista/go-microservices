@@ -96,7 +96,7 @@
   version = "v1.0.0"
 
 [[projects]]
-  digest = "1:75ed48e676c79393be368f0272b6ee0ba489dc1ef7f0807eaed5bf8527c69c60"
+  digest = "1:a54ada9beb59fdc35b69322979e870ff0b780e03f4dc309c4c8674b94927df75"
   name = "github.com/hashicorp/go-rootcerts"
   packages = ["."]
   pruneopts = "UT"
@@ -144,7 +144,7 @@
     "vessel-service/proto/vessel",
   ]
   pruneopts = "UT"
-  revision = "9e39ec7cb152cc1dce55502c7168ae73ef3584bc"
+  revision = "55c5724161422efc1425ab987cdf6e52261c1e6d"
 
 [[projects]]
   digest = "1:6491a68a381ec652fad0b1ed9664870b21763058270be238fc9dd0875e21c095"
@@ -294,7 +294,7 @@
     "ed25519/internal/edwards25519",
   ]
   pruneopts = "UT"
-  revision = "8dd112bcdc25174059e45e07517d9fc663123347"
+  revision = "c2843e01d9a2bc60bb26ad24e09734fdc2d9ec58"
 
 [[projects]]
   branch = "master"
@@ -318,11 +318,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:7ea2a5bdb9273298b19f6c14d01c11f592ed57bd6a658f7c0ddf9927011cc763"
+  digest = "1:1ac73f06b9fb3a62fac8bd63b7312ba35b03301d0ea89ebdac41a5757c54cea4"
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "UT"
-  revision = "584f3b12f43e1e55248c90e84804777009eed0a4"
+  revision = "980fc434d28e11f0a5c1ae102a263b8c56641011"
 
 [[projects]]
   digest = "1:a2ab62866c75542dd18d2b069fec854577a20211d7c0ea6ae746072a1dccdd18"

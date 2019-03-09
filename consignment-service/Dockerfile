@@ -3,7 +3,7 @@
 # We use the official golang image, which contains all the
 # correct build tools and libraries. Notice `as builder`,
 # this gives this container a name that we can reference later on.
-FROM golang:1.11.1 as builder
+FROM golang:1.12.0 as builder
 
 # Set our workdir to our current service in the gopath
 WORKDIR /go/src/github.com/jglista/go-microservices/consignment-service
@@ -18,7 +18,7 @@ RUN go get -u github.com/golang/dep/cmd/dep
 
 # Create a dep project, and run `ensure`, which will pull in all
 # of the dependencies within this directory.
-RUN dep init && dep ensure
+RUN dep ensure -v
 
 # Build the binary, with a few flags which will allow
 # us to run this binary in Alpine.
