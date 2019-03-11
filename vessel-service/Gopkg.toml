@@ -26,16 +26,16 @@
 
 
 [[constraint]]
-  branch = "master"
   name = "github.com/golang/protobuf"
+  version = "1.3.0"
 
 [[constraint]]
   branch = "master"
   name = "github.com/jglista/go-microservices"
 
 [[constraint]]
-  branch = "master"
   name = "github.com/micro/go-micro"
+  version = "1.0.0"
 
 [[constraint]]
   branch = "master"
