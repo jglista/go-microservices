@@ -134,11 +134,27 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:93bc3d23d1bc54d4f9ac3f5568f271db774533546657ecf481c49386da569969"
+  digest = "1:dd404b22b13ab5787b758688513eaff3ec775943b687aa69068626d2873bb957"
   name = "github.com/jglista/go-microservices"
   packages = ["user-service/proto/user"]
   pruneopts = "UT"
-  revision = "17db29b6f37567448a643a258199d8678619e8dc"
+  revision = "0c9bbca855ee85df6f620fe7158e2f12502ee43d"
+
+[[projects]]
+  digest = "1:d4e6e8584d0a94ce567d237e19192dae44d57d2767ac7e1d7fbf5626d176381a"
+  name = "github.com/jinzhu/gorm"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "472c70caa40267cb89fd8facb07fe6454b578626"
+  version = "v1.9.2"
+
+[[projects]]
+  branch = "master"
+  digest = "1:fd97437fbb6b7dce04132cf06775bd258cce305c44add58eb55ca86c6c325160"
+  name = "github.com/jinzhu/inflection"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "04140366298a54a039076d798123ffa108fff46c"
 
 [[projects]]
   digest = "1:6491a68a381ec652fad0b1ed9664870b21763058270be238fc9dd0875e21c095"
@@ -269,6 +285,14 @@
   pruneopts = "UT"
   revision = "ba968bfe8b2f7e042a574c888954fccecfa385b4"
   version = "v0.8.1"
+
+[[projects]]
+  digest = "1:274f67cb6fed9588ea2521ecdac05a6d62a8c51c074c1fccc6a49a40ba80e925"
+  name = "github.com/satori/go.uuid"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
+  version = "v1.2.0"
 
 [[projects]]
   branch = "master"
