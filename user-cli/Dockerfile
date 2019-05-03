@@ -1,4 +1,4 @@
-FROM golang:1.12.0 as builder
+FROM golang:1.12 as builder
 
 WORKDIR /go/src/github.com/jglista/go-microservices/user-cli
 

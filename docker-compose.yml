@@ -1,4 +1,4 @@
-version: '3.1'
+version: '3.7'
 
 services:
   consignment-cli:
@@ -37,17 +37,25 @@ services:
       MICRO_ADDRESS: ":50051"
       MICRO_REGISTRY: "mdns"
       DB_NAME: "postgres"
-      DB_HOST: "database"
+      DB_HOST: "postgres-user-store"
       DB_PORT: "5432"
       DB_USER: "postgres"
       DB_PASSWORD: "postgres"
+    depends_on:
+      - postgres-user-store
+    restart: on-failure
 
   mongodb-vessel-store:
     image: mongo
     ports:
       - 27017:27017
 
-  postgresql-user-store:
+  postgres-user-store:
     image: postgres
     ports:
       - 5432:5432
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
